@@ -1,0 +1,218 @@
+ body {
+   position: relative;
+   max-width: 70%;
+   margin: 0 auto;
+   background-color: rgba(0, 0, 0, 0);
+ }
+
+ th,
+ td {
+   text-transform: capitalize;
+   text-align: center;
+ }
+#page th{
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+#page tr:nth-of-type(even) {
+  background-color: rgb(128, 204, 229);
+}
+#page tr:nth-of-type(odd) {
+  background-color: rgba(69, 176, 238, 0.781);
+}
+
+ th label {
+   display: inline-block;
+   margin-right: 0.2rem;
+ }
+
+ label {
+   text-transform: capitalize;
+ }
+
+ label:hover {
+   cursor: pointer;
+ }
+
+ input[type=button] {
+   padding: 0.25rem;
+   height: auto;
+   text-transform: capitalize;
+ }
+
+ select {
+   width: 350px;
+   text-transform: capitalize;
+ }
+
+ select:hover {
+   cursor: pointer;
+ }
+
+ option {
+   text-transform: capitalize;
+ }
+
+ option:hover {
+   cursor: pointer;
+ }
+
+ label {
+   display: inline-block;
+ }
+
+ .outline:hover {
+   background-color: hsl(195deg, 85%, 41%);
+   color: white;
+ }
+
+ .header input {
+   width: 150px;
+   height: 2.5rem;
+ }
+
+ .abm {
+   border: 0.15rem solid hsl(195, 29%, 81%);
+   border-radius: 0.45rem;
+   max-width: 50%;
+   background-color: rgba(28, 206, 212, 0.712);
+ }
+
+ .abm span {
+   display: inline-block;
+   width: 150px;
+ }
+
+ .abm input {
+   width: 350px;
+   height: 2.5rem;
+   margin: 0;
+ }
+
+ .abm label {
+   display: block;
+ }
+
+ .abm select {
+   margin: 0;
+ }
+
+ .buttons {
+   display: flex;
+   margin: 1rem 0;
+
+ }
+
+ .buttons input {
+   margin: 0 1rem;
+ }
+
+ input.button {
+   box-shadow: 0 0.5rem rgba(65, 116, 41, 0.125);
+   transition: all 0.35s;
+ }
+
+ input.button:active {
+   transform: translateY(0.5rem);
+   box-shadow: none;
+ }
+
+ .d-none {
+   display: none;
+ }
+
+ tr:hover td {
+   cursor: default;
+   background-color: hsl(195, 36%, 76%);
+   color: white;
+ }
+
+ .table {
+   max-width: 100%;
+ }
+
+ input[type=button].btn--modificar {
+   background-color: rgb(30, 255, 0);
+ }
+
+ input[type=button].btn--modificar:hover {
+   color: rgb(241, 231, 211);
+   background-color: hsl(195deg, 90%, 32%);
+ }
+
+ input[type=button].btn--eliminar {
+   background-color: red;
+ }
+
+ input[type=button].btn--eliminar:hover {
+   color: red;
+   background-color: hsl(195deg, 90%, 32%);
+ }
+
+ input[type=button].btn:hover {
+   text-decoration: underline;
+ }
+
+ .spinner {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgba(115, 213, 243, 0.5);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .spinner__loader {
+   border: 16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid #3498db;
+   width: 120px;
+   height: 120px;
+   -webkit-animation: spin 2s linear infinite;
+   animation: spin 2s linear infinite;
+ }
+
+ @-webkit-keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ @keyframes spin {
+   0% {
+     transform: rotate(0deg);
+   }
+
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+
+ .error {
+   display: none;
+ }
+
+ .error.error--show {
+   background-color: black;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .error__titulo {
+   text-align: center;
+   font-size: 4rem;
+   color: hsl(195deg, 85%, 41%);
+ }
